@@ -5,8 +5,7 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install mkl-fft==1.3.8
-RUN pip install pywin32==306
+RUN pip install --index-url https://pypi.anaconda.org/intel/simple --extra-index-url https://pypi.org/simple mkl_fft
 
 EXPOSE 7864
 
