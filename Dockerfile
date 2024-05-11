@@ -6,6 +6,7 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install mkl-fft==1.3.8
+RUN pip install pywin32==306
 
 EXPOSE 7864
 
