@@ -11,4 +11,4 @@ ENV FLASK_RUN_PORT=5566
 
 EXPOSE 5000
 
-CMD ["python3", "-m" , "flask", "run", "--host=${FLASK_RUN_HOST}"]
+CMD ["flask", "run", "--host=${FLASK_RUN_HOST}"]
